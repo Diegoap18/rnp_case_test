@@ -1,0 +1,52 @@
+1) Qual país possui a maior quantidade de itens cancelados?
+
+SELECT 
+    c.Country,
+    SUM(od.quantity_ordered) AS CancelledItems
+FROM 
+    public.customers c
+JOIN 
+    public.orders o ON c.customer_number  = o.customer_number
+JOIN 
+    public.orderdetails od ON o.order_number  = od.order_number
+WHERE 
+    o.status  = 'Cancelled'
+GROUP BY 
+    c.country
+ORDER BY 
+    CancelledItems DESC
+;
+
+
+2) Qual o faturamento da linha de produto mais vendido, considere como os itens Shipped, cujo o pedido foi realizado no ano de 2005?
+
+SELECT
+    p.product_line ,
+    SUM(od.quantity_ordered  * od.price_each) AS faturamento_total
+FROM
+    public.orders o
+JOIN
+    public.orderdetails od ON o.order_number  = od.order_number
+JOIN
+    public.products p ON p.product_code  = od.product_code
+WHERE
+    o.status = 'Shipped' AND
+    EXTRACT(YEAR FROM o.order_date) = 2005
+GROUP BY
+    p.product_line
+ORDER BY
+    faturamento_total desc;
+	
+3) Nome, sobrenome e e-mail dos vendedores do Japão, o local-part do e-mail deve estar mascarado.
+
+SELECT 
+    e.first_name AS Nome,
+    e.last_name AS Sobrenome,
+    CONCAT('*****', SUBSTRING(e.email FROM POSITION('@' IN e.email))) AS Email_Mascarado
+FROM 
+    public.employees e
+JOIN 
+    public.offices o ON e.office_code = o.office_code
+WHERE 
+    o.country = 'Japan' 
+AND e."job_Title" like '%Sales%'; -- Supomos que os vendedores têm "Sales" em seus cargos
