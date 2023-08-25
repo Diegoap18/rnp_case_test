@@ -14,7 +14,7 @@ Image do Diagrama das tabelas: <br /><br />
 para este case utilizei a versão gratuita da ferramenta. <br /> Nele foi criado um cluster e um notebook para criação da logica 
 das tabelas mencionadas no modelo acima em parquet na plataforma.<br />
 
-Nesta Etapa foi criado de acordo com o Briefing do arquivo enviado pela RNP o seguinte notebook: <br />
+Nesta Etapa foi criado de acordo com o Briefing do arquivo enviado pela RNP, a conclusão esta no notebook abaixo: <br />
 ***Obs: o nome do notebook se refere as etapas descritas no arquivo "DESAFIO_RNP-TESTE.PDF"***
 <blockquote>Caminho: \usr\notebooks\3-Criando e Salvando tabelas como Parque.ipynb</blockquote>
 <br />
@@ -22,10 +22,11 @@ Nesta Etapa foi criado de acordo com o Briefing do arquivo enviado pela RNP o se
 Image previa do arquivo direto da Plataforma DataBricks Community: <br /><br />
 ![Screenshot](1-NotebookCriado_na_ferramenta.png)<br />
 
-Apos esta etapa segui para a proxima de realizar a criação das tabelas, banco de dados, e merge, insert, update, delete no ambiente Databricks <br/>
-<br/>
-5 - Nesta Etapa foi criado o banco de dados "ecommerce_rnp_teste", e as tabelas do arquivo "ecommerce_tables.sql"<br/>
-usei os arquivos Parquet para gerar as tabelas no DB "ecommerce_rnp_teste".
+Após concluir a etapa anterior, segui para a criação das tabelas, banco de dados, merge, insert, update, delete no ambiente Databricks <br />
+<br />
+
+5 - Nesta Etapa foi criado o banco de dados "ecommerce_rnp_teste", e as tabelas do arquivo "ecommerce_tables.sql"<br />
+usei os arquivos Parquet para gerar as tabelas no DB "ecommerce_rnp_teste". A resolução se encontra no notebook abaixo:<br />
 
 <blockquote>Caminho: \usr\notebooks\4- Criando Banco e subindo os arquivos Parquet.ipynb</blockquote>
 <br />
