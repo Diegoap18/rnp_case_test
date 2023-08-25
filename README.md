@@ -11,7 +11,7 @@ Image do Diagrama das tabelas: <br /><br />
 ![Screenshot](TB_DIAGRAM.png)<br />
 
 4- Criação do notebook no [Databricks Community](https://community.cloud.databricks.com/) <br />
-para este case utilizei a versão gratuita da ferramenta. e Nele foi criado um cluster e um notebook para criação da logica <br />
+para este case utilizei a versão gratuita da ferramenta. <br /> Nele foi criado um cluster e um notebook para criação da logica 
 das tabelas mencionadas no modelo acima em parquet na plataforma.<br />
 
 Nesta Etapa foi criado de acordo com o Briefing do arquivo enviado pela RNP o seguinte notebook: <br />
@@ -33,7 +33,38 @@ usei os arquivos Parquet para gerar as tabelas no DB "ecommerce_rnp_teste".
 Image previa do arquivo 2 direto da Plataforma DataBricks Community: <br /><br />
 ![Screenshot](2-NotebookCriando_banco_m_u_i_d.png)<br />
 
+6- Neste ponto inicio as analises conforme descrito abaixo:
+<blockquote>
+  - Qual país possui a maior quantidade de itens cancelados? <br />
+  - Qual o faturamento da linha de produto mais vendido, considere como os itens Shipped, cujo o pedido foi realizado no ano de 2005? <br />
+  - Nome, sobrenome e e-mail dos vendedores do Japão, o local-part do e-mail deve estar mascarado.
+</blockquote>
+<br />
+Criei um notebook chamado:
+<blockquote>Caminho: \usr\notebooks\5-Codigo Spark Perguntas e Respostas.ipynb</blockquote>
+<br />
 
+Nele inclui os resultados possiveis das analises solicitadas.<br />
+
+Image previa do arquivo 3 direto da Plataforma DataBricks Community: <br /><br />
+![Screenshot](3-NotebookGerando_analises.png)<br />
+
+Por fim todos os resultados foram salves em formato delta que se encontra no caminho abaixo <br />
+<blockquote>são 3 deltas: delta_analise1,delta_analise2,delta_analise3 <br />  
+Caminho: \FileStore\output\delta_analise1<br />
+Caminho: \FileStore\output\delta_analise2<br />
+Caminho: \FileStore\output\delta_analise3<br /></blockquote>
+<br />
+
+## Conclusão:
+O case demostrou, não somente a habilidade de utilizar o databricks, mas tambem a possibilidade de realizar analises variadas na plataforma<br />
+deste modo, pude relembrar um pouco da minha epoca de analista de dados e claro pude novamente usar as ferramentas da databrics novamente.
+
+O meu maior desafio foi de fato foi realizar o merge, insert, update, delete, justamente pelo fato das tabelas conterem poucos dados, <br />
+tive que utilizar para algums deles a duplicação dos dados para demostrar a funcionalidade, especialmente em insert e update, fazendo <br />
+logo em seguida o distinct para corrigir o problema antes de realizar as analises.
+
+Por fim agradeço pelo desafio e vou deixar este case ativo aqui como portfolio, para futuras consultas e oportunidades.
 
 
 
