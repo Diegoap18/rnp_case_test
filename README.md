@@ -49,7 +49,7 @@ Nele inclui os resultados possiveis das analises solicitadas.<br />
 Image previa do arquivo 3 direto da Plataforma DataBricks Community: <br /><br />
 ![Screenshot](3-NotebookGerando_analises.png)<br />
 
-Por fim todos os resultados foram salves em formato delta que se encontra no caminho abaixo <br />
+Por fim todos os resultados foram salvos em formato delta que se encontra no caminho abaixo <br />
 <blockquote>são 3 deltas: delta_analise1,delta_analise2,delta_analise3 <br />  
 Caminho: \FileStore\output\delta_analise1<br />
 Caminho: \FileStore\output\delta_analise2<br />
