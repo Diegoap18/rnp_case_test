@@ -57,11 +57,11 @@ Caminho: \FileStore\output\delta_analise3<br /></blockquote>
 <br />
 
 ## Conclusão:
-O case demostrou, não somente a habilidade de utilizar o databricks, mas tambem a possibilidade de realizar analises variadas na plataforma<br />
-deste modo, pude relembrar um pouco da minha epoca de analista de dados e claro pude novamente usar as ferramentas da databrics novamente.
+O case demostrou, não somente a habilidade de utilizar o databricks, mas tambem a possibilidade de realizar analises variadas na plataforma
+deste modo, pude relembrar um pouco da minha epoca de analista de dados e claro pude novamente usar as ferramentas da databrics novamente.<br />
 
-O meu maior desafio foi de fato foi realizar o merge, insert, update, delete, justamente pelo fato das tabelas conterem poucos dados, <br />
-tive que utilizar para algums deles a duplicação dos dados para demostrar a funcionalidade, especialmente em insert e update, fazendo <br />
+O meu maior desafio foi de fato foi realizar o merge, insert, update, delete, justamente pelo fato das tabelas conterem poucos dados,
+tive que utilizar para algums deles a duplicação dos dados para demostrar a funcionalidade, especialmente em insert e update, fazendo
 logo em seguida o distinct para corrigir o problema antes de realizar as analises.
 
 Por fim agradeço pelo desafio e vou deixar este case ativo aqui como portfolio, para futuras consultas e oportunidades.
